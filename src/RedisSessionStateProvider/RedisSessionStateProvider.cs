@@ -6,8 +6,9 @@
 using System;
 using System.Web;
 using System.Web.SessionState;
+using Microsoft.Web.Redis;
 
-namespace Microsoft.Web.Redis
+namespace SFA.DAS.Web.Redis
 {
     public class RedisSessionStateProvider : SessionStateStoreProviderBase
     {

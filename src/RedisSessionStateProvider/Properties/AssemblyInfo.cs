@@ -3,9 +3,11 @@
 // Licensed under the MIT License. See License.txt in the project root for license information.
 //
 
+using System;
 using System.Reflection;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using SFA.DAS.Web.Redis.Properties;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
@@ -35,7 +37,7 @@ using System.Runtime.InteropServices;
 #endif
 [assembly: AssemblyTitle("Cache Providers")]
 
-namespace System.Reflection
+namespace SFA.DAS.Web.Redis.Properties
 {
     /// <summary>
     /// Provided as a down-level stub for the 4.5 AssemblyMetaDataAttribute class.

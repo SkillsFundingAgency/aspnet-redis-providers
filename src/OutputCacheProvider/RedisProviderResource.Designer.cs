@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Microsoft.Web.Redis {
+namespace SFA.DAS.Web.Redis {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Microsoft.Web.Redis {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Microsoft.Web.Redis.RedisProviderResource", typeof(RedisProviderResource).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("SFA.DAS.Web.Redis.RedisProviderResource", typeof(RedisProviderResource).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

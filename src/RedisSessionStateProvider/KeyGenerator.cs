@@ -5,7 +5,7 @@
 
 using System;
 
-namespace Microsoft.Web.Redis
+namespace SFA.DAS.Web.Redis
 {
     internal class KeyGenerator
     {

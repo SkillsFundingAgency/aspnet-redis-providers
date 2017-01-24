@@ -11,6 +11,7 @@ using System.Configuration.Provider;
 using System.Web.SessionState;
 using System.Collections.Generic;
 using System.Web.Configuration;
+using SFA.DAS.Web.Redis;
 
 namespace Microsoft.Web.Redis.Tests
 {

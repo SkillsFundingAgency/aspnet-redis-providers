@@ -6,7 +6,7 @@
 using System;
 using System.Web.SessionState;
 
-namespace Microsoft.Web.Redis
+namespace SFA.DAS.Web.Redis
 {
     internal interface ICacheConnection
     {

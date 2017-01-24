@@ -10,6 +10,8 @@ using System.IO;
 using System.Reflection;
 using System.Web.Configuration;
 using System.Web.Hosting;
+using Microsoft.Azure;
+using SFA.DAS.Web.Redis;
 
 namespace Microsoft.Web.Redis
 {
@@ -224,7 +226,7 @@ namespace Microsoft.Web.Redis
         {
             if (!string.IsNullOrEmpty(attrName))
             {
-                string paramFromAppSetting = ConfigurationManager.AppSettings[attrName];
+                string paramFromAppSetting = CloudConfigurationManager.GetSetting(attrName);
                 if (!string.IsNullOrEmpty(paramFromAppSetting))
                 {
                     return paramFromAppSetting;

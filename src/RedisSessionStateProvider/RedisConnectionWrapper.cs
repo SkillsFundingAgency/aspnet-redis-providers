@@ -6,8 +6,9 @@
 using System;
 using System.Collections.Generic;
 using System.Web.SessionState;
+using Microsoft.Web.Redis;
 
-namespace Microsoft.Web.Redis
+namespace SFA.DAS.Web.Redis
 {
     internal class RedisConnectionWrapper : ICacheConnection
     {

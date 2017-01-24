@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Web.SessionState;
+using SFA.DAS.Web.Redis;
 using Xunit;
 
 namespace Microsoft.Web.Redis.Tests
