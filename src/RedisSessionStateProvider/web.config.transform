@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <configuration>
   <system.web>
-    <sessionState mode="Custom" customProvider="MySessionStateStore">
+    <sessionState mode="Custom" customProvider="RedisSessionProvider">
       <providers>
         <!-- For more details check https://github.com/Azure/aspnet-redis-providers/wiki -->
         <!-- Either use 'connectionString' OR 'settingsClassName' and 'settingsMethodName' OR use 'host','port','accessKey','ssl','connectionTimeoutInMilliseconds' and 'operationTimeoutInMilliseconds'. -->
@@ -25,11 +25,12 @@
             loggingMethodName = "<Logging method should be defined in loggingClass. It should be public, static, does not take any parameters and should have a return type of System.IO.TextWriter.>" [String]
             redisSerializerType = "<Assembly qualified class name that implements Microsoft.Web.Redis.ISerializer>" [String]
           />
-        -->
         <add name="MySessionStateStore" type="Microsoft.Web.Redis.RedisSessionStateProvider"
              host=""
              accessKey=""
              ssl="true" />
+        -->
+        <add type="SFA.DAS.Web.Redis.RedisSessionStateProvider" name="RedisSessionProvider" connectionString="RedisSessionProviderConnectionString" />
       </providers>
     </sessionState>
   </system.web>    

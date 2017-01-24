@@ -2,7 +2,7 @@
 <configuration>
   <system.web>
     <caching>
-      <outputCache defaultProvider="MyRedisOutputCache">
+      <outputCache defaultProvider="RedisOutputCache">
         <providers>
           <!-- For more details check https://github.com/Azure/aspnet-redis-providers/wiki -->
           <!-- Either use 'connectionString' OR 'settingsClassName' and 'settingsMethodName' OR use 'host','port','accessKey','ssl','connectionTimeoutInMilliseconds' and 'operationTimeoutInMilliseconds'. -->
@@ -24,16 +24,14 @@
             loggingMethodName = "<Logging method should be defined in loggingClass. It should be public, static, does not take any parameters and should have a return type of System.IO.TextWriter.>" [String]
             redisSerializerType = "<Assembly qualified class name that implements Microsoft.Web.Redis.ISerializer>" [String]
           />
-          -->
           <add name="MyRedisOutputCache" type="Microsoft.Web.Redis.RedisOutputCacheProvider"
                host=""
                accessKey=""
                ssl="true" />
+          -->
+        <add type="SFA.DAS.Web.Redis.RedisOutputCacheProvider" name="RedisOutputCache" connectionString="RedisOutputCacheConnectionString" />
         </providers>
       </outputCache>
     </caching>
   </system.web>    
 </configuration>
-
-
-

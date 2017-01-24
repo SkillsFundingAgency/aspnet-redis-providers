@@ -1,17 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
     <metadata minClientVersion="2.6">
-        <id>Microsoft.Web.RedisOutputCacheProvider</id>
+        <id>SFA.DAS.Web.RedisOutputCacheProvider</id>
         <version>1.0.0.0</version>
-        <title>RedisOutputCacheProvider</title>
-        <authors>Microsoft</authors>
-        <owners>Microsoft</owners>
-        <licenseUrl>http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm</licenseUrl>
-        <projectUrl>https://github.com/Azure/aspnet-redis-providers/wiki</projectUrl>
-        <requireLicenseAcceptance>true</requireLicenseAcceptance>
-        <description>Custom output cache provider for redis cache.</description>
-        <copyright>Microsoft © 2014</copyright>
-        <tags>outputcache outputcacheprovider azure microsoft windowsazureofficial redis</tags>
+        <authors>DAS</authors>
+        <owners>DAS</owners>
+        <licenseUrl>https://github.com/SkillsFundingAgency/aspnet-redis-providers/blob/master/License.txt</licenseUrl>
+        <projectUrl>https://github.com/SkillsFundingAgency/aspnet-redis-providers</projectUrl>
+        <description>Custom output cache provider for redis cache, fork adds support for reading configuration from .cscfg file</description>
         <dependencies>
           <dependency id="StackExchange.Redis.StrongName" version="1.0.488" />
         </dependencies>
@@ -24,8 +20,7 @@
     </metadata>
   <files>
     <file src="web.config.transform" target="content\net40\web.config.transform" />
-    <file src="..\..\bin\Release\Signed\v4.0\Microsoft.Web.RedisOutputCacheProvider.dll" target="lib\net40\Microsoft.Web.RedisOutputCacheProvider.dll" />
-    <file src="..\..\bin\Release\Microsoft.Web.RedisOutputCacheProvider\v4.0\Microsoft.Web.RedisOutputCacheProvider.pdb" target="lib\net40\Microsoft.Web.RedisOutputCacheProvider.pdb" />
-    <file src="Readme.txt" target="Readme.txt" />
+    <file src="..\..\bin\Release\SFA.DAS.Web.RedisOutputCacheProvider\v4.0\SFA.DAS.Web.RedisOutputCacheProvider.dll" target="lib\net40\SFA.DAS.Web.RedisOutputCacheProvider.dll" />
+    <file src="..\..\bin\Release\SFA.DAS.Web.RedisOutputCacheProvider\v4.0\SFA.DAS.Web.RedisOutputCacheProvider.pdb" target="lib\net40\SFA.DAS.Web.RedisOutputCacheProvider.pdb" />
   </files>
 </package>
